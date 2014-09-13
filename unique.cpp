@@ -40,8 +40,8 @@ void ilerazy(vector<Pair> &vvv)
 
 {
     for(uint32_t i = 0; i < vvv.size(); ++i)
-    cout << vvv.at(i).wordd << " " << vvv.at(i).cnt << " razy. " ;
-    cout<<endl;
+    cout <<i+1<<"."<< vvv.at(i).wordd << " " << vvv.at(i).cnt << " razy. "<<endl ;
+
 
 }
 
@@ -77,4 +77,30 @@ uint32_t i = 0;
            cout <<"slowem ktore najczesciej wystepuje jest:   " <<vvv.at(i).wordd << "   wystepuje " << vvv.at(i).cnt << " razy. " << endl;
 
 }
+
+
+void zamiana(vector<string> &vvv,vector<string> &vvv2,vector<string> &vvv3)
+
+{
+    cout<<"co 2 slowo zamiana: "<<endl;
+    for(int i=1;i<vvv2.size();i+=2)
+    swap(vvv.at(i),vvv2.at(i));
+
+    for(int i=1;i<vvv2.size();i+=2)
+    swap(vvv2.at(i),vvv3.at(i));
+
+cout<<"-----------------------------------------------------------"<<endl;
+    for(int i=0;i<vvv.size();i++)
+    cout<<vvv.at(i)<<" ";
+    cout<<endl;
+cout<<"-----------------------------------------------------------"<<endl;
+
+    for(int i=0;i<vvv2.size();i++)
+    cout<<vvv2.at(i)<<" ";
+    cout<<endl;
+cout<<"------------------------------------------------------------"<<endl;
+
+    cout<<endl;
+}
+
 

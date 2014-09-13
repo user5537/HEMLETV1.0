@@ -30,3 +30,4 @@ void ilerazy(vector<Pair> &vvv);
 void unikat(vector<Pair> &vvv);
 void ileunikat(vector<Pair> &vvv);
 void najwiecejslow(vector<Pair> &vvv);
+void zamiana(vector<string> &vvv,vector<string> &vvv2,vector<string> &vvv3);
