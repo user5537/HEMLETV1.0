@@ -31,3 +31,4 @@ void unikat(vector<Pair> &vvv);
 void ileunikat(vector<Pair> &vvv);
 void najwiecejslow(vector<Pair> &vvv);
 void zamiana(vector<string> &vvv,vector<string> &vvv2,vector<string> &vvv3);
+void add_keyword(vector<string> &keywords, const string &word);
