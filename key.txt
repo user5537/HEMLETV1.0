@@ -1,5 +1,4 @@
 and
-and_eq
 asm
 auto
 bitand
@@ -37,10 +36,8 @@ mutable
 namespace
 new
 not
-not_eq
 operator
 or
-or_eq
 private
 protected
 public
@@ -71,4 +68,3 @@ volatile
 wchar_t
 while
 xor
-xor_eq

@@ -86,3 +86,33 @@
 1410792720 source:c:\users\xeon-21\desktop\projekt a\a1 hamlet v0.99\hemletv1.0\unique.cpp
 	"unique.h"
 
+1410561612 source:c:\users\xeon-21\desktop\hemletv1.0\funkcje.cpp
+
+1410805842 source:c:\users\xeon-21\desktop\hemletv1.0\parser.cpp
+	"parser.h"
+
+1410559586 c:\users\xeon-21\desktop\hemletv1.0\parser.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
+1410805842 source:c:\users\xeon-21\desktop\hemletv1.0\unique.cpp
+	"unique.h"
+
+1410805842 c:\users\xeon-21\desktop\hemletv1.0\unique.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
+1410806225 source:c:\users\xeon-21\desktop\hemletv1.0\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"parser.h"
+	"unique.h"
+	<algorithm>
+	<iomanip>
+

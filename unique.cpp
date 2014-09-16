@@ -35,13 +35,13 @@ void co5te(vector<string> &vvv)
 void ilerazy(vector<Pair> &vvv)
 {
 
-   //for(int i=0; i<vvv.size(); i++)
-            for( int i = 0; i < vvv.size()-1; i++ )
+    //for(int i=0; i<vvv.size(); i++)
+    for( int i = 0; i < vvv.size()-1; i++ )
 
-                for( int j = 0; j < vvv.size()-1; j++ )
+        for( int j = 0; j < vvv.size()-1; j++ )
 
-                    if( vvv.at(j).wordd > vvv.at(j+1).wordd )
-                        swap( vvv.at(j).wordd, vvv.at(j+1).wordd );
+            if( vvv.at(j).wordd > vvv.at(j+1).wordd )
+                swap( vvv.at(j).wordd, vvv.at(j+1).wordd );
 
 
 
@@ -78,13 +78,13 @@ void najwiecejslow(vector<Pair> &v)
     int maxx=0;
     uint32_t i = 0;
     for(uint32_t i = 0; i < v.size(); ++i)
-      if(v.at(i).cnt>maxx) maxx=v.at(i).cnt;//cout<<maxx;
+        if(v.at(i).cnt>maxx) maxx=v.at(i).cnt;//cout<<maxx;
 
-        cout<<endl;
+    cout<<endl;
 
     for(uint32_t i = 0; i < v.size(); ++i)
-    if(v.at(i).cnt==maxx)
-         cout <<"slowem ktore najczesciej wystepuje jest: " << v.at(i).wordd<<" wystepuje " << v.at(i).cnt << " razy. " << endl;
+        if(v.at(i).cnt==maxx)
+            cout <<"slowem ktore najczesciej wystepuje jest: " << v.at(i).wordd<<" wystepuje " << v.at(i).cnt << " razy. " << endl;
 }
 void zamiana(vector<string> &vvv,vector<string> &vvv2,vector<string> &vvv3)
 {
@@ -108,4 +108,11 @@ void zamiana(vector<string> &vvv,vector<string> &vvv2,vector<string> &vvv3)
 
 
 void add_keyword(vector<string> &keywords, const string &word)
-{        keywords.push_back(word);};
+{
+    keywords.push_back(word);
+};
+
+
+
+
+

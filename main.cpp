@@ -22,7 +22,6 @@ int main()
     plik.open("h.txt");
     plik2.open("b.txt");
     key.open("key.txt");
-
     string tekst;
     enum STATES {initial,inside,outside};
     STATES state;
@@ -33,66 +32,56 @@ int main()
     plik3.open("c.html");
     string html = "<html><body>";
     plik3 << html;
-
-
-
-
-
     while(key.good())
     {
         getline(key, tekst);
-
         vector<string> kwords = parser(tekst);
-
-
         for(unsigned int i = 0; i<kwords.size(); ++i)
             add_keyword(keywords, kwords.at(i));
-
     }
     key.close();
-
-
-
-
-cout<<keywords.at(0)<<endl;
-
+    cout<<keywords.at(0)<<endl;
     while(plik.good())
     {
         getline(plik, tekst);
         vector<string> Slowa = parser(tekst);
-
         for(unsigned int i = 0; i<Slowa.size(); ++i)
             add_word(v, Slowa.at(i));
-
-
-        for(int i = 0; i<Slowa.size(); i+=5)
-
-
-            co5.push_back(Slowa.at(i));
+        for(int i = 0; i<Slowa.size(); ++i)
+            if(i>1&&i<6&&i%4==0)
+                co5.push_back(Slowa.at(i));
         for(unsigned int i = 0; i<Slowa.size(); ++i)
             vvv.push_back(Slowa.at(i));
-
         for(unsigned int i = 0; i<Slowa.size(); ++i)
             vvv3.push_back(Slowa.at(i));
 
 
-            plik3      << tekst << "<br />"  << endl;
+
+        for(unsigned int i = 0; i < keywords.size(); ++i)//podkreslanie slow kluczowych w tekscie Hamleta
+        {
+            size_t start = tekst.find(" " + keywords.at(i) + " ");
+            if(start != string::npos)
+            {
+                tekst.replace(start, string(keywords.at(i)).length()+1, " <b><u>"+string(keywords.at(i))+"</u></b> ");
+            }
+
+
+        }
+
+plik3 << tekst << "<br />" << endl;
+
+
+
 
 
 
 
 
     }
-    string html_end =  "</body></html>";
+    string html_end = "</body></html>";
     plik3 << html_end;
-
     plik3.close();
     plik.close();
-
-
-
-
-
     while(plik2.good())
     {
         getline(plik2, tekst);
@@ -100,12 +89,6 @@ cout<<keywords.at(0)<<endl;
         for(unsigned int i = 0; i<Slowa.size(); ++i)
             vvv2.push_back(Slowa.at(i));
     }
-
-
-
-
-
-
     plik2.close();
     int numer=0;
     while(1)

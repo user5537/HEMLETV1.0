@@ -9,14 +9,23 @@
 
 using namespace std;
 
-struct Pair {
+struct Pair
+{
     string wordd;
     int cnt;
-    Pair(string wordd) { this->wordd = wordd; cnt = 1; }
+    Pair(string wordd)
+    {
+        this->wordd = wordd;
+        cnt = 1;
+    }
 };
-struct Word {
+struct Word
+{
     string word;
-    Word(string word) { word = "no"; }
+    Word(string word)
+    {
+        word = "no";
+    }
 };
 
 
@@ -32,3 +41,4 @@ void ileunikat(vector<Pair> &vvv);
 void najwiecejslow(vector<Pair> &vvv);
 void zamiana(vector<string> &vvv,vector<string> &vvv2,vector<string> &vvv3);
 void add_keyword(vector<string> &keywords, const string &word);
+
